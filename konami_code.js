@@ -3,7 +3,7 @@ let index = 0
 
 function init() {
   function triggerKeyDown(e) {
-    document.addEventListener('keydown', triggerKeyDown;
+    document.addEventListener('keydown', triggerKeyDown);
       var key = parseInt(e.detail || e.which); //returns true if either is correct- indicates button pressed
 
       if (key === code[index]) { //if first index matches input key, then iterate
