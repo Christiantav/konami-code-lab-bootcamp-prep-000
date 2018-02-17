@@ -5,7 +5,7 @@ function init() {
   function triggerKeyDown(e) {
     document.addEventListener('keydown', triggerKeyDown);
       var key = parseInt(e.detail || e.which); //returns true if either is correct- indicates button pressed
-      console.log('key');
+
       if (key === code[index]) { //if first index matches input key, then iterate
         index++;
 
