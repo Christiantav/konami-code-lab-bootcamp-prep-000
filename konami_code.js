@@ -9,7 +9,7 @@ function init() {
       if (key === code[index]) { //if first index matches input key, then iterate
         index++;
 
-        if (index === code.length - 1) { //if all the keys were pressed in order and iteration is complete
+        if (index === code.length) { //if all the keys were pressed in order and iteration is complete
           window.alert("cheat code: initiated"); //give the alert titled atta guy
           index = 0;
         }
