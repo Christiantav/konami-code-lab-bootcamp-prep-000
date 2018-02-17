@@ -11,7 +11,7 @@ function init() {
 
         if (index === code.length-1) { //if all the keys were pressed in order and iteration is complete
           window.alert("cheat code: initiated"); //give the alert titled atta guy
-        
+          index = 0
         }
       } else { //if criteria is not met entirely, restart at index 0
         index = 0;
