@@ -16,5 +16,5 @@ function init() {
       } else { //if criteria is not met entirely, restart at index 0
         index = 0;
       }
-  }
+  };)
 }
