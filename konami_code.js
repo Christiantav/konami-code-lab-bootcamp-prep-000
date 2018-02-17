@@ -4,16 +4,16 @@ let index = 0
 function init() {
   function triggerKeyDown(e) {
     document.addEventListener('keydown', triggerKeyDown);
-      var key = parseInt(e.detail || e.which);
+      var key = parseInt(e.detail || e.which); //returns true if either is correct- indicates button pressed
 
-      if (key === code[index]) {
+      if (key === code[index]) { //if first index matches input key, then iterate
         index++;
 
-        if (index === code.length - 1) {
-          window.alert("atta guy!")
+        if (index === code.length - 1) { //if all the keys were pressed in order and iteration is complete
+          window.alert("atta guy!") //give the alert titled atta guy
           index = 0;
         }
-      } else {
+      } else { //if criteria is not met entirely, restart at index 0
         index = 0;
       }
   }
