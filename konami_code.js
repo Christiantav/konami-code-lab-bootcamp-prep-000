@@ -4,8 +4,8 @@ function init() {
 
   let index = 0;
 
-  document.addEventListener('keydown', triggerKeyDown);
-  
+  document.addEventListener('keydown', triggerKeyDown); //format (event type, listener)
+
   function triggerKeyDown(e) {
 
       const key = parseInt(e.detail || e.which); //returns true if either is correct- indicates button pressed
